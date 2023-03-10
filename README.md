@@ -4,6 +4,9 @@
 
 ## Datasets
 
+1. EnParaDetox: 🤗 https://huggingface.co/datasets/s-nlp/paradetox
+2. RuParaDetox: 🤗 https://huggingface.co/datasets/s-nlp/ru_paradetox
+
 ---
 
 ## Models
