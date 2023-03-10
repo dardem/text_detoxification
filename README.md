@@ -8,6 +8,9 @@
 
 ## Models
 
+1. English SOTA: 🤗 https://huggingface.co/s-nlp/bart-base-detox
+2. Russian SOTA: 🤗 https://huggingface.co/s-nlp/ruT5-base-detox
+
 ---
 ## Demos
 
