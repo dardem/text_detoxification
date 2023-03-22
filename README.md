@@ -1,5 +1,13 @@
 # Text Detoxification
 
+| toxic text   |      neutral paraphrase      |
+|----------|-------------|
+| this is scaring the s\*\*t out of me. | This is really scaring me.  |
+| calm the f\*\*k down | Please calm your nerves  |
+| its a crock of s\*\*t , and you know it. | It's senseless, you know it  |
+
+This repo summarize all the information about Text Detoxification project. Here, you can find all dataset, evaluation setups, and SOTA models for text detoxification for Enlgish and Russian languages.
+
 ---
 
 ## Datasets
@@ -17,13 +25,28 @@
 ---
 
 ## Evaluation
+Automatic evaluation always is separated into three parameters: (i) ***style transfer accuracy*** (STA) which is usually estimated by toxicity classifier; (ii) ***content similarity*** (SIM) which can be estimated either via cosine simiarity between embeddings or as a score from a classifier; (iii) ***fluency*** (FL) which can be estimated either via perplexity from LM or as a score from language acceptability classifier. The most recent evaluation setup for the languages:
 
+### English
+1. Toxicity classifier: 🤗 https://huggingface.co/s-nlp/roberta_toxicity_classifier
+2. Content similarity classifier: 🤗 
+3. Fluency classifier: 🤗 https://huggingface.co/cointegrated/roberta-large-cola-krishna2020
+
+### Russian
+1. Toxicity classifier: 🤗 https://huggingface.co/IlyaGusev/rubertconv_toxic_clf
+2. Text embedder: 🤗
+3. Fluency classifier: 🤗
 ---
 ## Demos
 
+You can check our [telegram bot](https://t.me/rudetoxifierbot) and take out all the anger on it!
+
 ---
 ## Github Pages
-
+1. [The first version of Russian Texts Detoxifier](https://github.com/s-nlp/rudetoxifier): simple baselines, Russian condBERT, ruGPT-3.
+2. [Unsupervised English Texts Detoxiifcation](https://github.com/s-nlp/detox): English condBERT, ParaGedi.
+3. [English ParaDetox](https://github.com/s-nlp/paradetox): English ParaDetox dataset, the first supervised English detoxification SOTA ``bart-detox``.
+4. [Russian ParaDetox](https://github.com/s-nlp/russe_detox_2022): Russian ParaDetox dataset, the first supervised Russian detoxification SOTA ``ruT5-detox``
 ---
 
 ## Papers
@@ -38,4 +61,4 @@
 
 ## Contact
 
-Any question, suggestions, discissions to: Daryna Dementieva (dardem96@gmail.com)
+Any question, suggestions, discussions to: Daryna Dementieva (dardem96@gmail.com)
