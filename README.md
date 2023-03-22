@@ -46,7 +46,7 @@ You can check our [telegram bot](https://t.me/rudetoxifierbot) and take out all 
 1. [The first version of Russian Texts Detoxifier](https://github.com/s-nlp/rudetoxifier): simple baselines, Russian condBERT, ruGPT-3.
 2. [Unsupervised English Texts Detoxiifcation](https://github.com/s-nlp/detox): English condBERT, ParaGedi.
 3. [English ParaDetox](https://github.com/s-nlp/paradetox): English ParaDetox dataset, the first supervised English detoxification SOTA ``bart-detox``.
-4. [Russian ParaDetox](https://github.com/s-nlp/russe_detox_2022): Russian ParaDetox dataset, the first supervised Russian detoxification SOTA ``ruT5-detox``
+4. [Russian ParaDetox](https://github.com/s-nlp/russe_detox_2022): competition RUSSE-2022 details, Russian ParaDetox dataset, the first supervised Russian detoxification SOTA ``ruT5-detox``
 ---
 
 ## Papers
