@@ -34,7 +34,7 @@ Automatic evaluation always is separated into three parameters: (i) ***style tra
 
 ### Russian
 1. Toxicity classifier: 🤗 https://huggingface.co/IlyaGusev/rubertconv_toxic_clf
-2. Text embedder: 🤗
+2. Text embedder: 🤗 https://huggingface.co/sentence-transformers/LaBSE (russian part)
 3. Fluency classifier: 🤗
 ---
 ## Demos
