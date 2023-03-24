@@ -8,19 +8,43 @@
 
 This repo summarize all the information about Text Detoxification project. Here, you can find all dataset, evaluation setups, and SOTA models for text detoxification for Enlgish and Russian languages.
 
+## Main Idea
+
+We are the first to address text detoxification task as seq2seq generation task. To achieve this, we collected the parallel corpora of pairs toxic<->non-toxic texts (See illustration). After that, we trained LM on this corpora to perform detoxification task. These models perform very good and definitely way better than previous unsupervised approaches.
+
+![](https://github.com/dardem/text_detoxification/blob/main/schema.jpg)
+
 ---
 
 ## Datasets
 
+We release all the main ParaDetox datates as well as the results of crowdsourcing tasks:
+* The negatily marked samples from *Paraphrasing* task can be used to train classifier to detect if the sentence is detoxified in general or not;
+* The results from *Content* task can be used to train paraphrase detector between toxic and non-toxic texts and then to measure texts similarity.
+* The results from *Toxicity* task can be used as additional data for toxicity classification.
+
+### English
+
 1. EnParaDetox: 🤗 https://huggingface.co/datasets/s-nlp/paradetox
-2. RuParaDetox: 🤗 https://huggingface.co/datasets/s-nlp/ru_paradetox
+2. EnParaDetox: Paraphrase Task Negative Results: 🤗 https://huggingface.co/datasets/s-nlp/en_non_detoxified
+3. EnParaDetox: Content Task Results: 🤗 https://huggingface.co/datasets/s-nlp/en_paradetox_content
+4. EnParaDetox: Toxicity Task Results: 🤗 https://huggingface.co/datasets/s-nlp/en_paradetox_toxicity
+
+### Russian
+
+1. RuParaDetox: 🤗 https://huggingface.co/datasets/s-nlp/ru_paradetox
+2. RuParaDetox: Paraphrase Task Negative Results: 🤗 https://huggingface.co/datasets/s-nlp/ru_non_detoxified
+3. RuParaDetox: Content Task Results: 🤗 https://huggingface.co/datasets/s-nlp/ru_paradetox_content
+4. RuParaDetox: Toxicity Task Results: 🤗 https://huggingface.co/datasets/s-nlp/ru_paradetox_toxicity
 
 ---
 
 ## Models
 
 1. English SOTA: 🤗 https://huggingface.co/s-nlp/bart-base-detox
+![](https://github.com/dardem/text_detoxification/blob/main/en_manual_results.png)
 2. Russian SOTA: 🤗 https://huggingface.co/s-nlp/ruT5-base-detox
+![](https://github.com/dardem/text_detoxification/blob/main/ru_manual_results.png)
 
 ---
 
