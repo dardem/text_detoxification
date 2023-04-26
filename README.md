@@ -8,7 +8,7 @@
 
 This repo summarize all the information about Text Detoxification project. Here, you can find all dataset, evaluation setups, and SOTA models for text detoxification for Enlgish and Russian languages.
 
-## Why texts detoxification is useful?
+## Where text detoxification can be used?
 
 ![](https://github.com/dardem/text_detoxification/blob/main/detox_usage.png)
 
