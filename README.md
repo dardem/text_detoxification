@@ -8,6 +8,14 @@
 
 This repo summarize all the information about Text Detoxification project. Here, you can find all dataset, evaluation setups, and SOTA models for text detoxification for Enlgish and Russian languages.
 
+## Why texts detoxification is useful?
+
+![](https://github.com/dardem/text_detoxification/blob/main/detox_usage.png)
+
+1. Before training your language model, chatbot, you can preprocess scrapped training data to ensure that there will be no toxicity. But, you should not just through away your samples. You can detoxify them! Then, the major part of the dataset will not be lost but the content will be saved.
+2. You can ensure that the user message is also non-toxic. Again, the replica will be saved. Now after detoxification, we will ensure that the conversation will not be transferred into unsafe tone.
+3. You can cross-save the answers from your chat-bot as well! The conversation will not be stopped even if you chat-bot generates something toxic. Its reply will be detoxified and the user will see neutral answer.
+
 ## Main Idea
 
 We are the first to address text detoxification task as seq2seq generation task. To achieve this, we collected the parallel corpora of pairs toxic<->non-toxic texts (See illustration). After that, we trained LM on this corpora to perform detoxification task. These models perform very good and definitely way better than previous unsupervised approaches.
@@ -53,12 +61,12 @@ Automatic evaluation always is separated into three parameters: (i) ***style tra
 
 ### English
 1. Toxicity classifier: 🤗 https://huggingface.co/s-nlp/roberta_toxicity_classifier
-2. Content similarity classifier: 🤗 
+2. Content similarity classifier: 🤗 https://huggingface.co/sentence-transformers/LaBSE
 3. Fluency classifier: 🤗 https://huggingface.co/cointegrated/roberta-large-cola-krishna2020
 
 ### Russian
 1. Toxicity classifier: 🤗 https://huggingface.co/IlyaGusev/rubertconv_toxic_clf
-2. Text embedder: 🤗 https://huggingface.co/sentence-transformers/LaBSE (russian part)
+2. Text embedder: 🤗 https://huggingface.co/sentence-transformers/LaBSE
 3. Fluency classifier: 🤗
 ---
 ## Demos
