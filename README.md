@@ -33,25 +33,28 @@ We release all the main ParaDetox datates as well as the results of crowdsourcin
 
 ### English
 
-1. EnParaDetox: 🤗 https://huggingface.co/datasets/s-nlp/paradetox
-2. EnParaDetox: Paraphrase Task Negative Results: 🤗 https://huggingface.co/datasets/s-nlp/en_non_detoxified
-3. EnParaDetox: Content Task Results: 🤗 https://huggingface.co/datasets/s-nlp/en_paradetox_content
-4. EnParaDetox: Toxicity Task Results: 🤗 https://huggingface.co/datasets/s-nlp/en_paradetox_toxicity
+1. EnParaDetox: 🤗 [paradetox](https://huggingface.co/datasets/s-nlp/paradetox)
+2. EnParaDetox: Paraphrase Task Negative Results: 🤗 [en_non_detoxified](https://huggingface.co/datasets/s-nlp/en_non_detoxified)
+3. EnParaDetox: Content Task Results: 🤗 [en_paradetox_content](https://huggingface.co/datasets/s-nlp/en_paradetox_content)
+4. EnParaDetox: Toxicity Task Results: 🤗 [en_paradetox_toxicity](https://huggingface.co/datasets/s-nlp/en_paradetox_toxicity)
 
 ### Russian
 
-1. RuParaDetox: 🤗 https://huggingface.co/datasets/s-nlp/ru_paradetox
-2. RuParaDetox: Paraphrase Task Negative Results: 🤗 https://huggingface.co/datasets/s-nlp/ru_non_detoxified
-3. RuParaDetox: Content Task Results: 🤗 https://huggingface.co/datasets/s-nlp/ru_paradetox_content
-4. RuParaDetox: Toxicity Task Results: 🤗 https://huggingface.co/datasets/s-nlp/ru_paradetox_toxicity
+1. RuParaDetox: 🤗 [ru_paradetox](https://huggingface.co/datasets/s-nlp/ru_paradetox)
+2. RuParaDetox: Paraphrase Task Negative Results: 🤗 [ru_non_detoxified](https://huggingface.co/datasets/s-nlp/ru_non_detoxified)
+3. RuParaDetox: Content Task Results: 🤗 [ru_paradetox_content](https://huggingface.co/datasets/s-nlp/ru_paradetox_content)
+4. RuParaDetox: Toxicity Task Results: 🤗 [ru_paradetox_toxicity](https://huggingface.co/datasets/s-nlp/ru_paradetox_toxicity)
 
 ---
 
 ## Models
 
-1. English SOTA: 🤗 https://huggingface.co/s-nlp/bart-base-detox
+1. English SOTA: 🤗 [bart-base-detox]( https://huggingface.co/s-nlp/bart-base-detox)
+
 ![](https://github.com/dardem/text_detoxification/blob/main/en_manual_results.png)
-2. Russian SOTA: 🤗 https://huggingface.co/s-nlp/ruT5-base-detox
+
+2. Russian SOTA: 🤗 [ruT5-base-detox](https://huggingface.co/s-nlp/ruT5-base-detox)
+
 ![](https://github.com/dardem/text_detoxification/blob/main/ru_manual_results.png)
 
 ---
@@ -60,14 +63,15 @@ We release all the main ParaDetox datates as well as the results of crowdsourcin
 Automatic evaluation always is separated into three parameters: (i) ***style transfer accuracy*** (STA) which is usually estimated by toxicity classifier; (ii) ***content similarity*** (SIM) which can be estimated either via cosine simiarity between embeddings or as a score from a classifier; (iii) ***fluency*** (FL) which can be estimated either via perplexity from LM or as a score from language acceptability classifier. The most recent evaluation setup for the languages:
 
 ### English
-1. Toxicity classifier: 🤗 https://huggingface.co/s-nlp/roberta_toxicity_classifier
-2. Content similarity classifier: 🤗 https://huggingface.co/sentence-transformers/LaBSE
-3. Fluency classifier: 🤗 https://huggingface.co/cointegrated/roberta-large-cola-krishna2020
+1. Toxicity classifier: 🤗 [roberta_toxicity_classifier](https://huggingface.co/s-nlp/roberta_toxicity_classifier)
+2. Text embedder: 🤗 [LaBSE](https://huggingface.co/sentence-transformers/LaBSE)
+3. Fluency classifier: 🤗 [roberta-large-cola-krishna2020](https://huggingface.co/cointegrated/roberta-large-cola-krishna2020)
 
 ### Russian
-1. Toxicity classifier: 🤗 https://huggingface.co/IlyaGusev/rubertconv_toxic_clf
-2. Text embedder: 🤗 https://huggingface.co/sentence-transformers/LaBSE
-3. Fluency classifier: 🤗 https://huggingface.co/RussianNLP/ruRoBERTa-large-rucola
+1. Toxicity classifier: 🤗 [rubertconv_toxic_clf](https://huggingface.co/IlyaGusev/rubertconv_toxic_clf)
+2. Text embedder: 🤗 [LaBSE](https://huggingface.co/sentence-transformers/LaBSE)
+3. Fluency classifier: 🤗 [ruRoBERTa-large-rucola](https://huggingface.co/RussianNLP/ruRoBERTa-large-rucola)
+
 ---
 ## Demos
 
@@ -79,6 +83,7 @@ You can check our [telegram bot](https://t.me/rudetoxifierbot) and take out all 
 2. [Unsupervised English Texts Detoxiifcation](https://github.com/s-nlp/detox): English condBERT, ParaGedi.
 3. [English ParaDetox](https://github.com/s-nlp/paradetox): English ParaDetox dataset, the first supervised English detoxification SOTA ``bart-detox``.
 4. [Russian ParaDetox](https://github.com/s-nlp/russe_detox_2022): competition RUSSE-2022 details, Russian ParaDetox dataset, the first supervised Russian detoxification SOTA ``ruT5-detox``
+
 ---
 
 ## Papers
