@@ -1,4 +1,4 @@
-# Text Detoxification
+# Text Detoxification with Parallel Data
 
 | toxic text   |      neutral paraphrase      |
 |----------|-------------|
@@ -67,14 +67,14 @@ Automatic evaluation always is separated into three parameters: (i) ***style tra
 ### Russian
 1. Toxicity classifier: 🤗 https://huggingface.co/IlyaGusev/rubertconv_toxic_clf
 2. Text embedder: 🤗 https://huggingface.co/sentence-transformers/LaBSE
-3. Fluency classifier: 🤗
+3. Fluency classifier: 🤗 https://huggingface.co/RussianNLP/ruRoBERTa-large-rucola
 ---
 ## Demos
 
 You can check our [telegram bot](https://t.me/rudetoxifierbot) and take out all the anger on it!
 
 ---
-## Github Pages
+## Relevant Github Pages
 1. [The first version of Russian Texts Detoxifier](https://github.com/s-nlp/rudetoxifier): simple baselines, Russian condBERT, ruGPT-3.
 2. [Unsupervised English Texts Detoxiifcation](https://github.com/s-nlp/detox): English condBERT, ParaGedi.
 3. [English ParaDetox](https://github.com/s-nlp/paradetox): English ParaDetox dataset, the first supervised English detoxification SOTA ``bart-detox``.
