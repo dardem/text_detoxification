@@ -37,6 +37,7 @@ We release all the main ParaDetox datates as well as the results of crowdsourcin
 2. EnParaDetox: Paraphrase Task Negative Results: 🤗 [en_non_detoxified](https://huggingface.co/datasets/s-nlp/en_non_detoxified)
 3. EnParaDetox: Content Task Results: 🤗 [en_paradetox_content](https://huggingface.co/datasets/s-nlp/en_paradetox_content)
 4. EnParaDetox: Toxicity Task Results: 🤗 [en_paradetox_toxicity](https://huggingface.co/datasets/s-nlp/en_paradetox_toxicity)
+5. Additionally, we filtered [ParaNMT](https://aclanthology.org/P18-1042/) corpus to have detoxified pairs: 🤗 [paranmt_for_detox](https://huggingface.co/datasets/dardem/paranmt_for_detox)
 
 ### Russian
 
