@@ -70,7 +70,7 @@ Automatic evaluation always is separated into three parameters: (i) ***style tra
 
 ### Russian
 1. Toxicity classifier: 🤗 [rubertconv_toxic_clf](https://huggingface.co/IlyaGusev/rubertconv_toxic_clf)
-2. Text embedder: 🤗 [LaBSE](https://huggingface.co/sentence-transformers/LaBSE)
+2. Text embedder: 🤗 [fine-tuned RuBERT](https://huggingface.co/s-nlp/rubert-base-cased-conversational-paraphrase-v1)
 3. Fluency classifier: 🤗 [ruRoBERTa-large-rucola](https://huggingface.co/RussianNLP/ruRoBERTa-large-rucola)
 
 ---
